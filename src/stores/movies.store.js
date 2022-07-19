@@ -13,7 +13,7 @@ export const useMoviesStore = defineStore({
     }),
     actions: {
         async getMovies() {
-            const movies = await fetchWrapper.get(`${baseUrl}/movies`);
+            const movies = await fetchWrapper.get(`${baseUrl}/movie`);
 
             // update pinia state
             this.movies = movies;

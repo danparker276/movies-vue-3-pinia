@@ -14,12 +14,12 @@ export const useAuthStore = defineStore({
     actions: {
         async login(email, password) {
             let userTypeId=2;
-            const user = await fetchWrapper.post(`${baseUrl}/authenticate`, { email, password, userTypeId});
-
+    
+            const authObj = await fetchWrapper.post(`${baseUrl}/authenticate`, { email, password, userTypeId});
+            console.log("Token=" + authObj.access_token);
             // update pinia state
-            this.user = user;
-
             // store user details and jwt in local storage to keep user logged in between page refreshes
+            var user = {"token": authObj.access_token}; 
             localStorage.setItem('user', JSON.stringify(user));
 
             // redirect to previous url or default to home page
