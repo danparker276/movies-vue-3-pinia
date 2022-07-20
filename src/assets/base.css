@@ -5,3 +5,22 @@ a {
 .app-container {
     min-height: 350px;
 }
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    border: 0;
+}  
+.flex-child-right {
+    flex: 1;
+    border: 0;
+    text-align: right;
+}  
+
+
+
+.flex-child:first-child {
+    margin-right: 20px;
+} 

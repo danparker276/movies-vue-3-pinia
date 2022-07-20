@@ -16,7 +16,6 @@ export const useAuthStore = defineStore({
             let userTypeId=2;
     
             const authObj = await fetchWrapper.post(`${baseUrl}/authenticate`, { email, password, userTypeId});
-            console.log("Token=" + authObj.access_token);
             // update pinia state
             // store user details and jwt in local storage to keep user logged in between page refreshes
             var user = {"token": authObj.access_token}; 

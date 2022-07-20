@@ -14,7 +14,7 @@ usersStore.getAll();
 
 <template>
     <div>
-        <h1>Here is a list of All movies</h1>
+        <h1>Rentals TODO</h1>
         <p>We will add search and recommendations later</p>
     </div>
 </template>

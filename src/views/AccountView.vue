@@ -13,8 +13,7 @@ usersStore.getAll();
 </script>
 
 <template>
-    <div>
-        <h1>Account Settings</h1>
-        <p>Change your personal information and membership</p>
-    </div>
+
+        <h1>Account Settings TODO</h1>
+
 </template>

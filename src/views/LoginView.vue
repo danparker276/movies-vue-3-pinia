@@ -21,8 +21,8 @@ function onSubmit(values, { setErrors }) {
 <template>
     <div>
         <div class="alert alert-info">
-            Username: test<br />
-            Password: test
+            Username: dan@dan.com<br />
+            Password: password
         </div>
         <h2>Login</h2>
         <Form @submit="onSubmit" :validation-schema="schema" v-slot="{ errors, isSubmitting }">
